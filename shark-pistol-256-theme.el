@@ -104,6 +104,22 @@
  '(query-replace ((t (:inherit (isearch)))))
  '(header-line ((t (:foreground "#EEEEEE" :background "#444444" :box nil :inherit (mode-line)))))
  '(vertical-border ((t (:background "#333333" :foreground "#4b5a65"))))
+
+ ;; '(mm-uu-extract ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(custom-group-tag ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(custom-comment-tag ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(completions-common-part ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(edmacro-label ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(epa-string ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(custom-variable-obsolete ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(imenu-list-entry-face-2 ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(imenu-list-entry-subalist-face-2 ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(info-indented-text ((t (:foreground "#D3FC87" :background "#568787"))))
+ ;; '(info-menu ((t (:foreground "#D3FC87" :background "#568787"))))
+
+ '(hydra-face-blue ((t (:foreground "#77c7F7"))))
+
+
  '(isearch ((t (:foreground "#99ccee" :foreground "#D0ffA0" :background "#506860" :foreground "#D3FC87" :background "#35454a" :background "#568787" :bold t :underline t))))
  '(isearch-fail ((t (:foreground "#ffaaaa"  :background "#111" :_background "#433" :foreground "#E0808f" :background nil))))
  ;; highlights non-active search matches
@@ -150,8 +166,9 @@
  '(js2-jsdoc-tag ((t (:foreground "#667" :_foreground "#ffcfaf" :_background nil :_background "#333"))))
  '(js2-jsdoc-type ((t (:foreground "#99a" :foreground "#d3fc87" :foreground "#608080" :_background "#333"))))
  '(js2-jsdoc-value ((t (:foreground "#bbc" :_background "#333"))))
-
- '(js2-function-param ((t (:foreground "#BFBFBF" :foreground "#CFCFaF" :foreground "#ccc" :background "#293945"  :background "#333"))))
+ '(js2-external-variable ((t (:foreground "#7bc" :background "#020202"))))
+ '(js2-function-param ((t (:foreground "#BFBFBF" :foreground "#CFCFaF" :foreground "#ccc" :background "#293945"  :background "#333"
+))))
  ;; '(js2-function-param ((t (:background "#a0c3cf" :_foreground "#384348" :foreground "#204047" :bold t))))
 
  '(font-lock-type-face ((t (:foreground "#88dda0" :background "#103430"))))
@@ -200,19 +217,24 @@
  '(magit-branch-local ((t (:foreground "#5FCFCF" :background "#153540"))))
  '(magit-branch-remote-head ((t (:foreground "#85e0a5" :background "#2F393A"))))
  '(magit-branch-remote ((t (:foreground "#85e0a5" :background "#2F393A"))))
-
  '(magit-diff-file-heading ((t (:foreground "#BBBFC7" :weight bold))))
  '(magit-diff-file-heading-highlight ((t (:foreground "#E6E6E9" :background "#142c30" :_background "#2F3948" :background nil :weight bold :underline nil))))
-
  '(magit-diff-context ((t (:_background "#25292F" :_background "#282C34" :foreground "#808588" :foreground "#777" :foreground "#555"))))
  '(magit-diff-context-highlight ((t (:background "#3a3f48" :_background "#345" :_background "#35454A" :_background "#282C34" :background "#2f343a" :_foreground "#FFFFFF" :background "#262626" :foreground "#ddc" :foreground "#777" :foreground "#555" :background nil :background "#222")))) ; orig:grey70, "#3F3F3F"
-
  '(magit-diff-hunk-heading ((t (:foreground "#606040" :foreground "#85e0a5" :foreground "#FFCFAF" :foreground "#C0A090" :background "#404040" :background "#303030" :_background "#282C34"))))
  '(magit-diff-hunk-heading-highlight ((t (:_background "#568787" :foreground "#000" :foreground "#85e0a5" :foreground "#FFCFAF" :foreground "#C0A090" :_background "#2F393A"))))
  '(magit-diff-revision-summary-highlight ((t (:foreground "#85e0a5" :foreground "#FFCFAF" :foreground "#C0A090" :background "#303030"))))
 
  '(magit-section-heading ((t (:foreground "#D3FC87" :foreground "#343744" :background "#222"))))
  '(magit-section-highlight ((t (:foreground "#D3FC87" :foreground "#d5c0dd" :foreground "#9dd" :foreground "#343744" :background "#343744" :background "#343744" :background "#2a3237" :background "#2F3948" :background "#132933" :background "#3a3a3a" :background "#222"))))
+
+ ;; '(git-gutter+-added ((t (:foreground: "#6dd"))))
+ ;; '(git-gutter+-deleted ((t (:foreground: "#d5c0dd"))))
+ ;; '(git-gutter:added ((t (:foreground: "#6dd"))))
+ ;; '(git-gutter:deleted ((t (:foreground: "#d5c0dd"))))
+
+ '(git-gutter:added ((t (:foreground "#6dd" :background nil))))
+ '(git-gutter:deleted ((t (:foreground "#d5c0dd" :background nil))))
 
  '(magit-diff-added ((t (:foreground "#B0dFdF" :foreground "#B0cFd4" :background "#568787" :background "#455065" :_background "#202C31" :foreground "#334" :foreground "#6dd" :background "#282C34" :_background "#222" :background "#444" :background nil))))
  '(magit-diff-added-highlight ((t (:foreground "#A9FFFF" :foreground "#A9FFFF" :foreground "#c0eFe0" :foreground "#6dd" :_foreground "#D3eC87" :background "#568787" :background "#485268" :background "#35454a" :background "#345" :_background "#356" :background "#444" :background nil :bold t))))
@@ -224,6 +246,9 @@
  '(magit-diff-hunk-heading-selection ((t (:foreground "#C0A090" :foreground "#657686" :_background "#3F3C3A" :background "#353546" :foreground "#657696" :foreground "#697F9F" :weight bold))))
  '(magit-log-author ((t (:foreground "#309090" :background "#2F393A"))))
  '(magit-diff-whitespace-warning ((t (:background "#dFa9bF"))))
+
+ ;; '(magit-reflog-checkout ((t (:foreground "#D3FC87" :background "#568787"))))
+ 
  '(magit-tag ((t (:foreground "#5FCFCF" :background "#153540" :foreground "#FFCFAF" :background "#000" :foreground "#AF7777"))))
 
 
@@ -231,10 +256,15 @@
  '(smerge-refined-removed ((t (:foreground "#d5c0dd" :foreground "#FFc9FF" :background "#654A4A" :background "#485268"))))
  '(smerge-lower ((t (:foreground "#B0dFdF" :background "#568787" :background "#455065" :background "#303C41"))))
  '(smerge-refined-added ((t (:foreground "#A9FFFF" :background "#568787" :background "#485268" :_background "#35454a"))))
- '(helm-selection ((t (:background "#455065"))))
+
  '(helm-source-header ((t (:foreground "#B0FFFF" :background "#35454a" :box '(:line-width 1 :color "#556070")))))
  '(helm-match ((t (:foreground "#B0FFFF"))))
  '(helm-separator ((t :foreground "#4A496D")))
+ '(helm-ff-file-extension ((t :foreground "#D3FC87")))
+ '(helm-ff-directory ((t :foreground "#ade" :background "#353546")))
+
+ '(helm-selection ((t :background "#35454a" :foreground "#D3FC87")))
+ ;; '(helm-selection-line ((t :background "#000")))
  '(company-tooltip-annotation ((t (:foreground "#D3FC87"))))
  '(company-tooltip-annotation-selection ((t (:foreground "#D3FC87"))))
  '(company-echo-common ((t (:foreground "#FFCFAF" :weight bold :underline t))))
@@ -316,7 +346,7 @@
 				      :foreground "#c0f970"
 				      :background nil
 				      :weight bold))))
- '(lsp-headerline-breadcrumb-path-face ((t (:foreground "" :background nil))))
+ '(lsp-headerline-breadcrumb-path-face ((t (:background nil))))
 
  ;; '(tide-hl-identifier-face ((t (:foreground "#D3FC87" :foreground "#FFCFAF" :background "#568787" :foreground nil :background nil))))
  )
